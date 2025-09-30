@@ -1,0 +1,60 @@
+*{margin: 0 auto;}
+
+main{
+      width: 1200px;
+      height: 600px;
+      /* background-color: gray; */
+}
+#a{
+    width: 360px; /* era 400px de largura, com padding 
+    10 + 10 = 20, subtrai os 20px e fica 380px e com margin
+    10 + 10 = 20, subtrai os 20px de 380px, e ficam 360px*/
+    height: 560px; /* era 600px de altura, com padding 
+    10 + 10 = 20, subtrai os 20px e fica 580px e com margin
+    10 + 10 = 20, subtrai os 20px de 580px, e ficam 560px*/
+    background-color: #0dff00;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 6px 5px 15px black;
+}
+#b{
+    width: 354px;
+    height: 554px;
+    background-color: aqua;
+    float: left;
+    border: 3px solid black;
+    padding: 10px; 
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 6px 5px 15px black;
+    
+}
+#c{
+    width: 360px;
+    height: 560px;
+    background-color: #ff00b7;
+    float: right;   
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 6px 5px 15px black;
+}
+p{
+    text-align: justify;
+}
+
+/*responsividade*/
+@media only screen and (max-width: 768px) {
+    #main{
+        width: 100%;
+    }
+}
+/*gambiarra é o ...*/
+@media only screen and (max-width: 768px) {
+    #a, #b, #c {
+        width: 768px;
+        float: left;
+    }
+}
