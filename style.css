@@ -1,60 +1,73 @@
-*{margin: 0 auto;}
-
+*{
+    margin: 0 auto;
+}
 main{
-      width: 1200px;
-      height: 600px;
-      /* background-color: gray; */
+    width: 80%;
+    height: 600px;
+    /* background-color: aqua; */
+}
+#a, #b, #c {
+    width: 29.33%;
+    height: 600px;
+    float: left;
+    text-align: center;
+}
+#n, #m, #s{
+    text-shadow: 5px 5px 15px black;
+}
+
+p{padding: 2%;}
+h1{ padding: 2%;}
+img { padding: 2%;
+border: 10px;
+border-radius: 20px;}
+#c {
+    background-color: #F2BC79;
+   border: 1px #000000;
+    border-radius: 20px ;
+    box-shadow: 3px 5px 15px #D9779B;
+    margin: 10px;
+    padding: 10px;
+    border-style: solid;
 }
 #a{
-    width: 360px; /* era 400px de largura, com padding 
-    10 + 10 = 20, subtrai os 20px e fica 380px e com margin
-    10 + 10 = 20, subtrai os 20px de 380px, e ficam 360px*/
-    height: 560px; /* era 600px de altura, com padding 
-    10 + 10 = 20, subtrai os 20px e fica 580px e com margin
-    10 + 10 = 20, subtrai os 20px de 580px, e ficam 560px*/
-    background-color: #0dff00;
-    float: left;
-    padding: 10px;
+    background-color: #41AEF2;
+   border: 1px #000000;
+    border-radius: 20px ;
+    box-shadow: 3px 5px 15px #34A6BF;
     margin: 10px;
-    border-radius: 20px;
-    box-shadow: 6px 5px 15px black;
+    padding: 10px;
+    border-style: solid;
 }
 #b{
-    width: 354px;
-    height: 554px;
-    background-color: aqua;
-    float: left;
-    border: 3px solid black;
-    padding: 10px; 
-    margin: 10px;
+    background-color: #4F4F99;
+     border: 1px #000000;
     border-radius: 20px;
-    box-shadow: 6px 5px 15px black;
-    
-}
-#c{
-    width: 360px;
-    height: 560px;
-    background-color: #ff00b7;
-    float: right;   
+    box-shadow: 3px 5px 15px #7284e9;
     margin: 10px;
     padding: 10px;
+    border-style: solid;
+}
+a {
+    color: #fff;
+    line-height: 30px;
+    text-decoration: none;
+}
+.btn{
+    width: 150px;
+    height: 30px;
+    /* background-color: #243075; */
+    text-align: center;
+    border: 2px solid #fff;
     border-radius: 20px;
-    box-shadow: 6px 5px 15px black;
+    margin-top: 15px;
 }
-p{
-    text-align: justify;
+body{
+     /* background-image: url(https://tcg.pokemon.com/assets/img/me-expansions/mega-evolution/patterns/me01-pattern-black-2x.jpg) */
+  background: #485982;
+background: radial-gradient(circle, rgba(72, 89, 130, 1) 0%, rgba(46, 184, 250, 1) 24%, rgba(251, 204, 129, 1) 50%, rgb(251, 155, 79) 70%, rgba(79, 91, 160, 1) 87%, rgba(38, 47, 155, 1) 100%);
 }
-
-/*responsividade*/
 @media only screen and (max-width: 768px) {
-    #main{
-        width: 100%;
-    }
-}
-/*gambiarra é o ...*/
-@media only screen and (max-width: 768px) {
-    #a, #b, #c {
-        width: 768px;
-        float: left;
-    }
+    #a, #b, #c{ width: 100%; height: auto;}
+    .btn{ margin-bottom: 20px;}
 }
